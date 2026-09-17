@@ -1,0 +1,12 @@
+header {
+  background-color: #86b6e7;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+footer {
+  background-color: #7cd488;
+  display: flex;
+  justify-content: center;
+}
