@@ -185,5 +185,6 @@ De momento, dejo la web aquí, pero aún se puede mejorar. Ahora mismo hay mezcl
 
 [Run Code When a Component Is Inserted or Removed from the DOM](https://developer.salesforce.com/docs/platform/lwc/guide/create-lifecycle-hooks-dom.html)
 
+[What is the preferred method of commenting JavaScript objects and methods? [closed]](https://stackoverflow.com/questions/127095/what-is-the-preferred-method-of-commenting-javascript-objects-and-methods)
 
 

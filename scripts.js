@@ -11,10 +11,17 @@ const routes = {
   },
 };
 
-async function loadSection(idContainer, path) {
+/**
+ * Imports a javascript file
+ * Adds the content to a determined div in index.html
+ *
+ * @param idContainer The id of the index.html div
+ * @param filePath The filepath of the html file to fetch
+ */ 
+async function loadSection(idContainer, filePath) {
 
   const container = document.getElementById(idContainer);
-  const route = routes[path];
+  const route = routes[filePath];
 
   try{
     if(!cache.has(route.tag)) {
@@ -32,7 +39,13 @@ async function loadSection(idContainer, path) {
   }
 }
 
-
+/**
+ * Fetches a html file
+ * Adds the content to a determined div in index.html
+ *
+ * @param idContainer The id of the index.html div
+ * @param filePath The filepath of the html file to fetch
+ */ 
 async function initLoad(idContainer, filePath){
   const container = document.getElementById(idContainer);
 
