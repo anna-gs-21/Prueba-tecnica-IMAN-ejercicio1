@@ -131,11 +131,8 @@ En un inicio, para no pedir dos veces el mismo recurso, creé un objeto para usa
 En el diccionario se guardaba la ruta del archivo como clave y el contenido del recurso como valor. De esta forma, si se quiere obtener el contenido de un recurso (valor), sólo se tendría que buscar la ruta correspondiente (clave).
 
 El código seguía este flujo:
-
 1. Mira si la ruta con su contenido existe en el objeto.
-
 2. Si no existe, lo carga y lo guarda en el diccionario.
-
 3. Añade el contenido guardado en la página principal para que se muestre.
 
 Primero, había pensado en hacer esta funcionalidad con una array. Pero descarté la idea cuando me di cuenta de que usar un diccionario es más óptimo. El diccionario no busca una por una todas sus posiciones como la array, por lo tanto, es más rápido y se evitan bucles innecesarios.
